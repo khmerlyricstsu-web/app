@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail - Clothing Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">StyleHub</a>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#">Categories ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="shop.html?category=women">Women</a></li>
+            <li><a href="shop.html?category=kids">Kids</a></li>
+          </ul>
+        </li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="cart.html" class="cart-icon">Cart (<span id="cart-count">0</span>)</a>
+    </div>
+  </nav>
+
+  <section class="product-detail-section">
+    <div class="container">
+      <div class="product-detail-layout">
+        <!-- Image Gallery -->
+        <div class="product-gallery">
+          <img id="main-product-img" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Product image">
+          <div class="thumbnail-grid">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Thumbnail" class="thumbnail active">
+            <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Thumbnail" class="thumbnail">
+            <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Thumbnail" class="thumbnail">
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info">
+          <h1 id="product-name">Classic Cotton T-Shirt</h1>
+          <p class="product-price" id="product-price">$29.99</p>
+          <p class="product-description" id="product-desc">Soft, breathable cotton t-shirt perfect for everyday wear. Features a classic fit, crew neck, and durable fabric that holds its shape wash after wash.</p>
+
+          <!-- Size Selection -->
+          <div class="option-group">
+            <h4>Size</h4>
+            <div class="option-buttons" id="size-options">
+              <button class="option-btn">XS</button>
+              <button class="option-btn">S</button>
+              <button class="option-btn">M</button>
+              <button class="option-btn">L</button>
+              <button class="option-btn">XL</button>
+            </div>
+            <p class="error-msg" id="size-error" style="display:none;">Please select a size</p>
+          </div>
+
+          <!-- Color Selection -->
+          <div class="option-group">
+            <h4>Color</h4>
+            <div class="option-buttons" id="color-options">
+              <button class="option-btn">Black</button>
+              <button class="option-btn">White</button>
+              <button class="option-btn">Blue</button>
+              <button class="option-btn">Gray</button>
+            </div>
+            <p class="error-msg" id="color-error" style="display:none;">Please select a color</p>
+          </div>
+
+          <!-- Add to Cart -->
+          <button id="add-to-cart-btn" class="btn btn-primary btn-lg">Add to Cart</button>
+          <p class="out-of-stock" id="out-of-stock" style="display:none; color:red;">This combination is out of stock</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-icons">
+          <a href="#">📘</a>
+          <a href="#">📷</a>
+          <a href="#">🐦</a>
+        </div>
+        <p class="contact-info">info@stylehub.com | +855 12 345 678</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
